@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create a calculator</title>
+    <script>
+      let calculator = {
+        read() {
+          this.op1 = Number(prompt("Enter first operand"));
+          this.op2 = Number(prompt("Enter second operand"));
+        },
+
+        sum() {
+          return this.op1 + this.op2;
+        },
+
+        mul() {
+          return this.op1 * this.op2;
+        },
+      };
+
+      calculator.read();
+
+      alert(calculator.sum());
+      alert(calculator.mul());
+    </script>
+  </head>
+  <body></body>
+</html>
