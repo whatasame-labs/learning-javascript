@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create new Calculator</title>
+    <script>
+      function Calculator() {
+        this.read = function () {
+          this.op1 = Number(prompt("Enter first operand", ""));
+          this.op2 = Number(prompt("Enter second operand", ""));
+        };
+
+        this.sum = function () {
+          return this.op1 + this.op2;
+        };
+        this.mul = function () {
+          return this.op1 * this.op2;
+        };
+      }
+
+      const calculator = new Calculator();
+      calculator.read();
+
+      alert(`Sum = ${calculator.sum()}`);
+      alert(`Mul = ${calculator.mul()}`);
+    </script>
+  </head>
+  <body></body>
+</html>

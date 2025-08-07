@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create new Accumulator</title>
+    <script>
+      function Accumulator(startingValue) {
+        this.value = startingValue;
+        this.read = function () {
+          const newNumber = Number(prompt("Enter new number", ""));
+          this.value += newNumber;
+        };
+      }
+
+      const accumulator = new Accumulator(1);
+
+      accumulator.read();
+      accumulator.read();
+
+      alert(accumulator.value);
+    </script>
+  </head>
+  <body></body>
+</html>

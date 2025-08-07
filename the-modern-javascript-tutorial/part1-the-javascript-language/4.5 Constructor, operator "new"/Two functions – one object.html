@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Two functions - one object</title>
+  </head>
+  <script>
+    const icon = {};
+
+    function A() {
+      return icon;
+    }
+
+    function B() {
+      return icon;
+    }
+
+    const a = new A();
+    const b = new B();
+
+    alert(a == b);
+  </script>
+  <body></body>
+</html>
