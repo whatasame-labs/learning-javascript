@@ -1,0 +1,18 @@
+<script>
+  function sumInput() {
+    const arr = [];
+
+    while (true) {
+      const input = prompt('Enter a value', 0);
+
+      if (input === null || input === '' || !isFinite(input)) {
+        break;
+      }
+      arr.push(+input);
+    }
+
+    return arr.reduce((a, b) => a + b, 0);
+  }
+
+  alert(`Sum of input numbers: ${sumInput()}`);
+</script>
